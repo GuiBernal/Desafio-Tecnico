@@ -145,7 +145,15 @@ const filterLine = (ctx, generoUsuario) => {
         }
     }
     if (mostrarGenero.length === 0) {
-        return err(ctx, 404, `Não existem usuários na fila com o gênero: ${generoUsuario}.`)
+        if (generoUsuario == "m") {
+            return err(ctx, 404, `Não existem usuários na fila com o gênero masculino.`);
+        } else if (generoUsuario == "f") {
+            return err(ctx, 404, `Não existem usuários na fila com o gênero feminino.`);
+        } else if (generoUsuario == "nd") {
+            return err(ctx, 404, `Não existem usuários na fila sem um gênero declarado.`);
+        } else {
+            return err(ctx, 404, `Não existem usuários na fila com outros gêneros.`)
+        }
     }
     return done(ctx, 200, mostrarGenero);
 }
