@@ -81,20 +81,23 @@ Exemplos de saída:
 ```
 --------------------------------------------
 
-- Exemplos de requisição de adição à fila: PUT -> /addToLine/:id 
+- Exemplos de requisição de adição à fila: PUT -> /addToLine/id 
 
 &nbsp;
 Exemplos de saída: 
 
 --------------------------------------------
-(id: 0)
+(/addToLine/0)
 Usuário 0 está na posição 1.
+
 ---------------------
-(id: 1)
+(/addToLine/1)
 Usuário 1 está na posição 2.
+
 ---------------------
-(id: 3)
+(/addToLine/3)
 Usuário 3 está na posição 3.
+
 --------------------------------------------
 
 - Exemplo de requisição de ver fila: GET -> /showline
@@ -144,15 +147,16 @@ Exemplo de saída:
 
 --------------------------------------------
 Usuário 0 está na posição: 1.
+
 --------------------------------------------
 
-- Exemplo de requisição de filtrar fila: GET -> /filterLine/:genero
+- Exemplo de requisição de filtrar fila: GET -> /filterLine/genero
 
 &nbsp;
-Exemplos de saída: (caso tivesse o PUT acima)
+Exemplos de saída: (caso tivesse o PUT acima) *Os gêneros testados são: 'm'(Masculino), 'f'(Feminino), 'nd'(Não declarado) e 'o'(Outros)
 
 ---------------------
-(genero: m)
+(/filterLine/m)
 ```javascript=
 [
   {
@@ -164,7 +168,7 @@ Exemplos de saída: (caso tivesse o PUT acima)
 ]
 ```
 ---------------------
-(genero: f)
+(/filterLine/f)
 ```javascript=
 [
   {
@@ -176,10 +180,11 @@ Exemplos de saída: (caso tivesse o PUT acima)
 ]
 ```
 ---------------------
-(genero: nd)
-Não existem usuários na fila com o gênero: nd.
+(/filterLine/nd)
+Não existem usuários na fila sem um gênero declarado.
+
 ---------------------
-(genero: o)
+(/filterLine/o)
 ```javascript=
 [
   {
