@@ -93,7 +93,7 @@ Usuário 0 está na posição 1.
 (id: 1)
 Usuário 1 está na posição 2.
 ---------------------
-(id:3)
+(id: 3)
 Usuário 3 está na posição 3.
 --------------------------------------------
 
