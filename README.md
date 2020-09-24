@@ -88,19 +88,16 @@ Exemplos de saída:
 
 --------------------------------------------
 (id: 0)
-
-&nbsp;
 Usuário 0 está na posição 1.
+
 ---------------------
 (id: 1)
-
-&nbsp;
 Usuário 1 está na posição 2.
+
 ---------------------
 (id: 3)
-
-&nbsp;
 Usuário 3 está na posição 3.
+
 --------------------------------------------
 
 - Exemplo de requisição de ver fila: GET -> /showline
@@ -150,6 +147,7 @@ Exemplo de saída:
 
 --------------------------------------------
 Usuário 0 está na posição: 1.
+
 --------------------------------------------
 
 - Exemplo de requisição de filtrar fila: GET -> /filterLine/:genero
@@ -183,9 +181,8 @@ Exemplos de saída: (caso tivesse o PUT acima)
 ```
 ---------------------
 (genero: nd)
-
-&nbsp;
 Não existem usuários na fila com o gênero: nd.
+
 ---------------------
 (genero: o)
 ```javascript=
