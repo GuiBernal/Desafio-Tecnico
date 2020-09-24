@@ -3,8 +3,9 @@ Pessoa Desenvolvedora Backend - Estágio
 
 *Todos os testes foram feitos no Insomnia (https://insomnia.rest/)
 
-- Exemplo de requisição de criação de usuário:
-POST -> /createUser
+- Exemplo de requisição de criação de usuário: POST -> /createUser
+
+&nbsp;
 Exemplos de entrada:
 
 --------------------------------------------
@@ -80,8 +81,9 @@ Exemplos de saída:
 ```
 --------------------------------------------
 
-- Exemplo de requisição de adição à fila:
-PUT -> /addToLine/:id
+- Exemplos de requisição de adição à fila: PUT -> /addToLine/:id 
+
+&nbsp;
 Exemplos de saída: 
 
 --------------------------------------------
@@ -95,8 +97,9 @@ Usuário 1 está na posição 2.
 Usuário 3 está na posição 3.
 --------------------------------------------
 
-- Exemplo de requisição de ver fila:
-GET -> /showline
+- Exemplo de requisição de ver fila: GET -> /showline
+
+&nbsp;
 Exemplo de saída: (caso tivesse o PUT acima)
 
 --------------------------------------------
@@ -124,8 +127,9 @@ Exemplo de saída: (caso tivesse o PUT acima)
 ```
 --------------------------------------------
 
-- Exemplo de requisição de buscar usuário na fila:
-GET -> /findPosition
+- Exemplo de requisição de buscar usuário na fila: GET -> /findPosition
+
+&nbsp;
 Exemplo de entrada: (caso tivesse o PUT acima)
 
 --------------------------------------------
@@ -142,8 +146,9 @@ Exemplo de saída:
 Usuário 0 está na posição: 1.
 --------------------------------------------
 
-- Exemplo de requisição de filtrar fila:
-GET -> /filterLine/:genero
+- Exemplo de requisição de filtrar fila: GET -> /filterLine/:genero
+
+&nbsp;
 Exemplos de saída: (caso tivesse o PUT acima)
 
 ---------------------
@@ -187,8 +192,9 @@ Não existem usuários na fila com o gênero: nd.
 ```
 --------------------------------------------
 
-- Exemplo de requisição de retirar primeiro da fila:
-DELETE -> /popLine
+- Exemplo de requisição de retirar primeiro da fila: DELETE -> /popLine
+
+&nbsp;
 Exemplo de saída: (caso tivesse o PUT acima)
 
 --------------------------------------------
