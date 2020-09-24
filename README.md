@@ -8,29 +8,37 @@ POST -> /createUser
 Exemplos de entrada:
 
 --------------------------------------------
+```javascript=
 {
 	"nome":"Guido Bernal",
 	"email":"guido13bernal@gmail.com",
 	"genero":"m"
 }
+```
 ---------------------
+```javascript=
 {
 	"nome":"Juliana Souza",
 	"email":"ju_za@hotmail.com",
 	"genero":"f"
 }
+```
 ---------------------
+```javascript=
 {
 	"nome":"Marcelo Nova",
 	"email":"marcelonova@yahoo.com",
 	"genero":"nd"
 }
+```
 ---------------------
+```javascript=
 {
 	"nome":"Leticia Quevedo",
 	"email":"leti28qvd@outlook.com",
 	"genero":"o"
 }
+```
 --------------------------------------------
 Exemplos de saída:
 
