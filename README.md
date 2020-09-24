@@ -1,4 +1,4 @@
-# Desafio-Técnico
+# Desafio Técnico
 Pessoa Desenvolvedora Backend - Estágio
 
 *Todos os testes foram feitos no Insomnia (https://insomnia.rest/)
