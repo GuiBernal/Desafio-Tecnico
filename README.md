@@ -43,33 +43,41 @@ Exemplos de entrada:
 Exemplos de saída:
 
 --------------------------------------------
+```javascript=
 {
 	"id":0,
 	"nome":"Guido Bernal",
 	"email":"guido13bernal@gmail.com",
 	"genero":"m"
 }
+```
 ---------------------
+```javascript=
 {
 	"id":1,
 	"nome":"Juliana Souza",
 	"email":"ju_za@hotmail.com",
 	"genero":"f"
 }
+```
 ---------------------
+```javascript=
 {
 	"id":2,
 	"nome":"Marcelo Nova",
 	"email":"marcelonova@yahoo.com",
 	"genero":"nd"
 }
+```
 ---------------------
+```javascript=
 {
 	"id":3,
 	"nome":"Leticia Quevedo",
 	"email":"leti28qvd@outlook.com",
 	"genero":"o"
 }
+```
 --------------------------------------------
 
 - Exemplo de requisição de adição à fila:
@@ -92,6 +100,7 @@ GET -> /showline
 Exemplo de saída: (caso tivesse o PUT acima)
 
 --------------------------------------------
+```javascript=
 [
   {
     "nome": "Guido Bernal",
@@ -112,6 +121,7 @@ Exemplo de saída: (caso tivesse o PUT acima)
     "posicaoFila": 3
   }
 ]
+```
 --------------------------------------------
 
 - Exemplo de requisição de buscar usuário na fila:
@@ -119,9 +129,11 @@ GET -> /findPosition
 Exemplo de entrada: (caso tivesse o PUT acima)
 
 --------------------------------------------
+```javascript=
 {
 	"email":"guido13bernal@gmail.com"
 }
+```
 --------------------------------------------
 
 Exemplo de saída:
@@ -136,6 +148,7 @@ Exemplos de saída: (caso tivesse o PUT acima)
 
 ---------------------
 (genero: m)
+```javascript=
 [
   {
     "nome": "Guido Bernal",
@@ -144,8 +157,10 @@ Exemplos de saída: (caso tivesse o PUT acima)
     "posicaoFila": 1
   }
 ]
+```
 ---------------------
 (genero: f)
+```javascript=
 [
   {
     "nome": "Juliana Souza",
@@ -154,11 +169,13 @@ Exemplos de saída: (caso tivesse o PUT acima)
     "posicaoFila": 2
   }
 ]
+```
 ---------------------
 (genero: nd)
 Não existem usuários na fila com o gênero: nd.
 ---------------------
 (genero: o)
+```javascript=
 [
   {
     "nome": "Leticia Quevedo",
@@ -167,6 +184,7 @@ Não existem usuários na fila com o gênero: nd.
     "posicaoFila": 3
   }
 ]
+```
 --------------------------------------------
 
 - Exemplo de requisição de retirar primeiro da fila:
@@ -174,6 +192,7 @@ DELETE -> /popLine
 Exemplo de saída: (caso tivesse o PUT acima)
 
 --------------------------------------------
+```javascript=
 [
   {
     "nome": "Juliana Souza",
@@ -188,4 +207,5 @@ Exemplo de saída: (caso tivesse o PUT acima)
     "posicaoFila": 2
   }
 ]
+```
 --------------------------------------------
